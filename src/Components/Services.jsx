@@ -52,7 +52,7 @@ export default function Services() {
       id="Services"
       className="min-h-screen flex flex-col justify-center items-center p-10 py-24 gap-5 bg-purple-50"
     >
-      <h1 className="text-4xl font-bold">Our Digital Marketing Services</h1>
+      <h1 className="text-4xl text-center font-bold">Our Digital Marketing Services</h1>
       <p className="text-xl text-gray-500 text-center max-w-3xl">
         We offer a comprehensive suite of services designed to help your
         business thrive in the digital landscape.

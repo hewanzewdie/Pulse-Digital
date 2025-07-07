@@ -48,7 +48,7 @@ export default function Navbar() {
         </header>
       )}
       {isMenuOpen && (
-        <header className="flex p-5 border bg-white w-full sticky top-0 shadow">
+        <header className="flex p-5 border bg-white w-full sticky top-0 z-50 shadow">
           <div className="py-4 w-full">
             <div className="flex justify-end pr-10">
               <button onClick={() => setIsMenuOpen(false)}>
