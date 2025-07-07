@@ -15,11 +15,11 @@ export default function Home() {
           strategies and creative solutions that deliver measurable results.
         </p>
         <div className="md:space-x-5 flex sm:flex-col md:flex-row sm:gap-5">
-          <button className="lg:w-40 md:w-1/2 w-full hover:shadow-xl bg-purple-700 border border-purple-700 text-white hover:bg-purple-800 rounded-xl py-3 sm:mx-1 flex justify-center">
+          <button className="lg:w-40 md:w-1/2 sm:w-full hover:shadow-xl bg-purple-700 border border-purple-700 text-white hover:bg-purple-800 rounded-xl py-3 flex justify-center">
             Get Started
             <ArrowRightIcon />{" "}
           </button>
-          <button className="lg:w-40 md:w-1/2 w-full hover:shadow-xl border border-purple-700 text-purple-700 hover:bg-purple-700 hover:text-white rounded-xl py-3 sm:mx-1">
+          <button className="lg:w-40 md:w-1/2 sm:w-full hover:shadow-xl border border-purple-700 text-purple-700 hover:bg-purple-700 hover:text-white rounded-xl py-3">
             Learn More
           </button>
         </div>
