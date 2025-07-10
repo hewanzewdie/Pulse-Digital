@@ -14,7 +14,7 @@ export default function Home() {
           We help businesses grow their online presence with data-driven
           strategies and creative solutions that deliver measurable results.
         </p>
-        <div className="md:space-x-5 flex flex-col md:flex-row lg:flex-row sm:gap-5">
+        <div className="md:space-x-5 flex flex-col md:flex-row lg:flex-row gap-5">
           <button className="lg:w-40 md:w-1/2 w-full hover:shadow-xl bg-purple-700 border border-purple-700 text-white hover:bg-purple-800 rounded-xl py-3 flex justify-center">
             Get Started &nbsp;
             <ArrowRightIcon />{" "}

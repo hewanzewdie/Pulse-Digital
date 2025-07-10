@@ -28,7 +28,7 @@ export default function Navbar() {
     <>
       {!isMenuOpen && (
         <header
-          className={`w-full flex justify-between p-4 bg-white sticky top-0 z-50 transition-all duration-300 ${
+          className={`w-full flex justify-between p-3 bg-white sticky top-0 z-50 transition-all duration-300 ${
             hasScrolled
               ? "backdrop-blur-sm bg-white/80 shadow-lg"
               : "bg-purple-100"
@@ -52,7 +52,7 @@ export default function Navbar() {
                 to={id}
                 smooth={true}
                 duration={500}
-                className="font-semibold hover:text-purple-700 hover:underline hover:underline-offset-4 text-lg cursor-pointer"
+                className="font-semibold hover:text-purple-700 hover:underline hover:underline-offset-4 text-md cursor-pointer"
               >
                 {id}
               </Link>
@@ -88,7 +88,7 @@ export default function Navbar() {
                   smooth={true}
                   duration={500}
                   onClick={() => setIsMenuOpen(false)}
-                  className="font-semibold hover:text-purple-700 text-lg cursor-pointer"
+                  className="font-semibold hover:text-purple-700 text-md cursor-pointer"
                 >
                   {id}
                 </Link>
