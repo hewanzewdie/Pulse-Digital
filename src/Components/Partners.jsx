@@ -3,25 +3,23 @@ import useEmblaCarousel from "embla-carousel-react";
 
 export default function Partners() {
   const partners = [
-    {
-      name: "Amazon",
-      logo: "https://cdn.freebiesupply.com/images/large/2x/amazon-logo-transparent.png",
-    },
-    {
-      name: "Apple",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
-    },
-    {
-      name: "Facebook",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png",
-    },
-    {
-      name: "Google",
-      logo: "https://images.openai.com/thumbnails/url/WOBpgHicu1mSUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw7KCMgtKIn0TEkpdLcMjyj3KfP1rXBzyU8ryC41LA00zUnOC0uPqLIMCio3qigwifcxdyv3Co7wLskIKlcrBgBIuysO",
-    },
+    { name: "Amazon", logo: "https://cdn.freebiesupply.com/images/large/2x/amazon-logo-transparent.png" },
+    { name: "Apple", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" },
+    { name: "Facebook", logo: "https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" },
+    { name: "Google", logo: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" },
+    { name: "Netflix", logo: "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" },
+  { name: "Pinterest", logo: "https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" },
+    { name: "Spotify", logo: "https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg" },
+    { name: "Adobe", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Adobe-logo.svg/640px-Adobe-logo.svg.png" },
+    { name: "Samsung", logo: "https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg" },
+    { name: "Intel", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Intel_logo_%282006-2020%29.svg/640px-Intel_logo_%282006-2020%29.svg.png" },
+  { name: "Uber", logo: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png" },
+  { name: "LinkedIn", logo: "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" },
+  { name: "PayPal", logo: "https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" },
+  { name: "Microsoft", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/640px-Microsoft_logo.svg.png" },
   ];
 
-  const allPartners = [...partners, ...partners, ...partners];
+  const allPartners = [...partners, ...partners];
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     dragFree: true,
@@ -38,7 +36,7 @@ export default function Partners() {
       } else {
         emblaApi.scrollNext();
       }
-    }, 2500);
+    }, 2000);
 
     return () => clearInterval(autoplayTimer);
   }, [emblaApi]);
@@ -58,10 +56,10 @@ export default function Partners() {
   }
 
   return (
-    <div id="Partners" className="py-32 bg-purple-50">
+    <div id="Partners" className="py-32">
       <div className=" px-4">
         <div className="text-center  mb-12">
-          <h2 className="text-3xl font-bold mb-4 text-gray-900">
+          <h2 className="text-4xl font-bold mb-4 text-gray-900">
             Trusted by Industry Leaders
           </h2>
           <p className="text-lg text-gray-600">
@@ -78,12 +76,12 @@ export default function Partners() {
               {allPartners.map((partner, index) => (
                 <div
                   key={index}
-                  className="flex-shrink-0 border flex items-center justify-center h-20 bg-white rounded-lg px-8 shadow-sm hover:shadow-lg transition-shadow mx-6"
+                  className="flex-shrink-0 flex-center h-20 rounded-lg px-8"
                 >
                   <img
                     src={partner.logo}
                     alt={partner.name}
-                    className="max-h-12 max-w-[120px]"
+                    className="max-h-12 max-w-[120px] grayscale hover:grayscale-0"
                   />
                 </div>
               ))}

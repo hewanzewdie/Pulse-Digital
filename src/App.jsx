@@ -19,8 +19,8 @@ function App() {
       <About />
       <Services />
       <Solutions />
+      <Testimonials />      
       <Partners />
-      <Testimonials />
       <Contact />
       <Footer />
     </>

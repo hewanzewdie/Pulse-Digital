@@ -12,7 +12,7 @@ export default function Solutions() {
   return (
     <div
       id="Solutions"
-      className="min-h-screen flex flex-col items-center justify-center p-10 md:p-32 gap-5"
+      className="min-h-screen flex-center flex-col p-10 md:p-32 gap-5"
     >
       <h1 className="text-4xl font-bold text-center">Comprehensive Digital Solutions</h1>
       <p className="text-xl text-gray-500 text-center">

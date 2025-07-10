@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Manrope', 'ui-sans-serif', 'system-ui'],
+      },
       colors: {
         purple: {
           50: '#f5f3ff',

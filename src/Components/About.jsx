@@ -27,11 +27,11 @@ export default function About() {
   ];
   return (
     <div id="About" className="min-h-screen py-32 px-10 space-y-16">
-      <div className="text-center mb-12">
+      <div className="flex-center flex-col mb-12">
         <h2 className="text-4xl font-bold text-gray-900 mb-4">
           Your Partner in Digital Success
         </h2>
-        <p className="text-xl text-gray-600">
+        <p className="text-xl text-gray-600 text-center">
           Learn about our core pillars that guide us in crafting effective
           digital marketing strategies designed for measurable impact and
           sustainable growth.

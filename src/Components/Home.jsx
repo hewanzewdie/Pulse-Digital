@@ -3,7 +3,7 @@ export default function Home() {
   return (
     <div
       id="Home"
-      className="flex flex-col lg:flex-row p-10 min-h-screen border items-center bg-gradient-to-b from-purple-100 to-white"
+      className="flex flex-col lg:flex-row p-10 min-h-screen items-center bg-gradient-to-r from-white to-purple-100"
     >
       <div className="flex flex-col space-y-5 p-5">
         <h1 className="text-7xl font-bold">
@@ -16,7 +16,7 @@ export default function Home() {
         </p>
         <div className="md:space-x-5 flex sm:flex-col md:flex-row sm:gap-5">
           <button className="lg:w-40 md:w-1/2 w-full hover:shadow-xl bg-purple-700 border border-purple-700 text-white hover:bg-purple-800 rounded-xl py-3 flex justify-center">
-            Get Started
+            Get Started &nbsp;
             <ArrowRightIcon />{" "}
           </button>
           <button className="lg:w-40 md:w-1/2 w-full hover:shadow-xl border border-purple-700 text-purple-700 hover:bg-purple-700 hover:text-white rounded-xl py-3">

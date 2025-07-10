@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -15,24 +16,39 @@ export default function Navbar() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setHasScrolled(window.scrollY > 300);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
       {!isMenuOpen && (
-        <header className="w-full flex justify-around py-5  bg-white z-50 sticky top-0 shadow">
-          <h1 className="text-3xl font-bold">
+        <header
+          className={`w-full flex justify-between p-4 bg-transparent sticky top-0 z-50 transition-all duration-300 ${
+            hasScrolled
+              ? "backdrop-blur-sm bg-white/80 shadow-lg"
+              : "bg-purple-100"
+          }`}
+        >
+          <h1 className="text-3xl font-bold pl-5">
             <span className="text-purple-700">Pulse</span>Digital
           </h1>
-          <nav className="hidden md:flex justify-between w-2/3">
+          <nav className="hidden md:flex justify-between gap-6">
             {[
-              "Home",              
+              "Home",
               "About",
               "Services",
               "Solutions",
-              "Partners",
               "Testimonials",
+              "Partners",
               "Contact",
             ].map((id) => (
               <Link
+                key={id}
                 to={id}
                 smooth={true}
                 duration={500}
@@ -47,9 +63,10 @@ export default function Navbar() {
           </button>
         </header>
       )}
+
       {isMenuOpen && (
-        <header className="flex p-5 border bg-white w-full sticky top-0 z-50 shadow">
-          <div className="py-4 w-full">
+        <header className="flex p-3 border bg-white/70 backdrop-blur-md w-full sticky top-0 z-50 shadow">
+          <div className="w-full">
             <div className="flex justify-end pr-10">
               <button onClick={() => setIsMenuOpen(false)}>
                 <X size={30} />
@@ -57,12 +74,12 @@ export default function Navbar() {
             </div>
             <div className="flex flex-col gap-3 pl-10">
               {[
-                "Home",                
+                "Home",
                 "About",
                 "Services",
                 "Solutions",
-                "Partners",
                 "Testimonials",
+                "Partners",
                 "Contact",
               ].map((id) => (
                 <Link
