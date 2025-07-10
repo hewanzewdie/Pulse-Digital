@@ -96,7 +96,7 @@ export default function Contact() {
 
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col gap-5 lg:w-1/2 mt-10 shadow-xl p-10 rounded-xl bg-white"
+        className="flex flex-col gap-5 lg:w-1/2 mt-10 shadow-xl p-5 rounded-xl bg-white"
       >
         <h3 className="text-2xl font-semibold">Send Us a Message</h3>
 

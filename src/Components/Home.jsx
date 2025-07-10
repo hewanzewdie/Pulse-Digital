@@ -3,7 +3,7 @@ export default function Home() {
   return (
     <div
       id="Home"
-      className="flex flex-col lg:flex-row p-10 min-h-screen items-center bg-gradient-to-r from-white to-purple-100"
+      className="flex flex-col lg:flex-row p-10 px-5 min-h-screen items-center bg-gradient-to-r from-white to-purple-100"
     >
       <div className="flex flex-col space-y-5 p-5">
         <h1 className="text-7xl font-bold">
