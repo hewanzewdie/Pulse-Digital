@@ -28,7 +28,7 @@ export default function Navbar() {
     <>
       {!isMenuOpen && (
         <header
-          className={`w-full flex justify-between p-4 bg-transparent sticky top-0 z-50 transition-all duration-300 ${
+          className={`w-full flex justify-between p-4 bg-white sticky top-0 z-50 transition-all duration-300 ${
             hasScrolled
               ? "backdrop-blur-sm bg-white/80 shadow-lg"
               : "bg-purple-100"

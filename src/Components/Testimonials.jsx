@@ -98,7 +98,7 @@ export default function Testimonials() {
           <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
             "{current.content}"
           </p>
-          <div className="flex items-center gap-5">
+          <div className="flex lg:flex-row flex-col items-start lg:items-center gap-5">
             <img
               src={current.image}
               alt={current.name}
